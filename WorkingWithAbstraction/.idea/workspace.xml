@@ -1,17 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e8ec5377-30ca-48bf-b96b-582771834e6e" name="Default Changelist" comment="" />
+    <list default="true" id="e8ec5377-30ca-48bf-b96b-582771834e6e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CardRankExercise/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CardRankExercise/Ranks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CardSuitExercise/Cards.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CardSuitExercise/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CardswithPowerExercise/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CardswithPowerExercise/Rank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CardswithPowerExercise/Suit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GreedyTimesExercise/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GreedyTimesExercise/Main.java.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HotelReservationLab/Discount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HotelReservationLab/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HotelReservationLab/PriceCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HotelReservationLab/Season.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JediGalaxyExercise/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/JediGalaxyExercise/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PointInRectangleLab/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PointInRectangleLab/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PointInRectangleLab/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RhombusofStarsLab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentSystemLab/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentSystemLab/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StudentSystemLab/StudentSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TrafficLightsExercise/Lights.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TrafficLightsExercise/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1SvO2vXBCcbo0UGuRpzy15JO9YT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/StudentSystemLab" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -25,6 +82,89 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GreedyTimesExercise.Main" />
+      <module name="WorkingWithAbstraction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="GreedyTimesExercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CardRankExercise.Main" />
+      <module name="WorkingWithAbstraction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CardRankExercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CardswithPowerExercise.Main" />
+      <module name="WorkingWithAbstraction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="CardswithPowerExercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (6)" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="JediGalaxyExercise.Main" />
+      <module name="WorkingWithAbstraction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JediGalaxyExercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TrafficLightsExercise.Main" />
+      <module name="WorkingWithAbstraction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TrafficLightsExercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (6)" />
+      <item itemvalue="Application.Main (4)" />
+      <item itemvalue="Application.Main (5)" />
+      <item itemvalue="Application.Main (1)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (6)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (5)" />
+        <item itemvalue="Application.Main (4)" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -36,10 +176,37 @@
       <option name="presentableId" value="Default" />
       <updated>1572440399037</updated>
       <workItem from="1572440402524" duration="20000" />
+      <workItem from="1572440469626" duration="637000" />
+      <workItem from="1572442944535" duration="20196000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/GreedyTimesExercise/Main.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
