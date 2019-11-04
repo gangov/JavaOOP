@@ -32,50 +32,48 @@ Tomcat: "MEOW"
  */
 public class Main {
     public static void main(String[] args) throws IOException {
-        Scanner scanner = new Scanner(System.in);
-        String input = scanner.nextLine();
-        ArrayList<Animal> animals = new ArrayList<>();
-
-        while (!input.equals("Beast!")) {
-            String[] information = scanner.nextLine().split("\\s+");
-            String name = information[0];
-            int age = Integer.parseInt(information[1]);
-            String gender = information[2];
-
-//            if (name.isEmpty() || age < 0 || gender.isEmpty()) {
-//                System.out.println("Invalid input!");
-//                input = scanner.nextLine();
-//                continue;
+//        Scanner scanner = new Scanner(System.in);
+//        String input = scanner.nextLine();
+//        ArrayList<Animal> animals = new ArrayList<>();
+//
+//        while (!input.equals("Beast!")) {
+//            String[] information = scanner.nextLine().split("\\s+");
+//            String name = information[0];
+//            int age = Integer.parseInt(information[1]);
+//            String gender = information[2];
+//
+//            try {
+//                switch (input) {
+//                    case "Cat":
+//                        Cat cat = new Cat(name, age, gender);
+//                        animals.add(cat);
+//                        break;
+//                    case "Dog":
+//                        Dog dog = new Dog(name, age, gender);
+//                        animals.add(dog);
+//                        break;
+//                    case "Frog":
+//                        Frog frog = new Frog(name, age, gender);
+//                        animals.add(frog);
+//                        break;
+//                    case "Kitten":
+//                        Kitten kitten = new Kitten(name, age);
+//                        animals.add(kitten);
+//                        break;
+//                    case "Tomcat":
+//                        Tomcat tomcat = new Tomcat(name, age);
+//                        animals.add(tomcat);
+//                        break;
+//                }
+//            } catch (IllegalArgumentException e) {
+//                System.out.println(e.getMessage());
 //            }
-
-            switch (input) {
-                case "Cat":
-                    Cat cat = new Cat(name, age, gender);
-                    animals.add(cat);
-                    break;
-                case "Dog":
-                    Dog dog = new Dog(name, age, gender);
-                    animals.add(dog);
-                    break;
-                case "Frog":
-                    Frog frog = new Frog(name, age, gender);
-                    animals.add(frog);
-                    break;
-                case "Kitten":
-                    Kitten kitten = new Kitten(name, age, gender);
-                    animals.add(kitten);
-                    break;
-                case "Tomcat":
-                    Tomcat tomcat = new Tomcat(name, age, gender);
-                    animals.add(tomcat);
-                    break;
-            }
-
-            input = scanner.nextLine();
-        }
-
-        for (Animal animal : animals) {
-            System.out.println(animal);
-        }
+//
+//            input = scanner.nextLine();
+//        }
+//
+//        for (Animal animal : animals) {
+//            System.out.println(animal);
+//        }
     }
 }

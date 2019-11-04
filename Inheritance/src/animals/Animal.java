@@ -12,34 +12,22 @@ public class Animal {
     }
 
     public void setName(String name) {
-        if (name.isEmpty()) {
-            try {
-                throw new IllegalArgumentException("Invalid input!");
-            } catch (IllegalArgumentException e) {
-                System.out.println("Invalid input!");
-            }
+        if (name == null || name.trim().isEmpty()) {
+            throw new IllegalArgumentException("Invalid input!");
         }
         this.name = name;
     }
 
     public void setAge(int age) {
         if (age < 0) {
-            try {
-                throw new IllegalArgumentException("Invalid input!");
-            } catch (IllegalArgumentException e) {
-                System.out.println("Invalid input!");
-            }
+            throw new IllegalArgumentException("Invalid input!");
         }
         this.age = age;
     }
 
     public void setGender(String gender) {
-        if (gender.isEmpty()) {
-            try {
-                throw new IllegalArgumentException("Invalid input!");
-            } catch (IllegalArgumentException e) {
-                System.out.println("Invalid input!");
-            }
+        if (gender == null || gender.trim().isEmpty()) {
+            throw new IllegalArgumentException("Invalid input!");
         }
         this.gender = gender;
     }
@@ -63,12 +51,11 @@ public class Animal {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(this.getClass().getSimpleName().trim());
+        sb.append(this.getClass().getSimpleName());
         sb.append(System.lineSeparator());
-        sb.append(this.getName() + " " + this.getAge() + " " + this.gender).trimToSize();
+        sb.append(this.getName() + " " + this.getAge() + " " + this.gender);
         sb.append(System.lineSeparator());
-        sb.append(this.produceSound()).trimToSize();
-        sb.trimToSize();
+        sb.append(this.produceSound());
 
         return sb.toString().trim();
     }
