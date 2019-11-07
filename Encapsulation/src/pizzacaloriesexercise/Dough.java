@@ -5,6 +5,7 @@ public class Dough {
     private String bakingTechnique;
     private double weight;
 
+    // TODO: 7.11.19 validate if dough and backing technique is there
     public Dough(String flourType, String bakingTechnique, double weight) {
         this.setFlourType(flourType);
         this.setBakingTechnique(bakingTechnique);
@@ -16,7 +17,7 @@ public class Dough {
     }
 
     private void setFlourType(String flourType) {
-        if (flourType == null || flourType.trim().isEmpty()) {
+        if (flourType == null || flourType.trim().isEmpty() || !checkFlourBakingValidity(flourType)) {
             throw new IllegalArgumentException("Invalid type of dough.");
         }
         this.flourType = flourType;
@@ -27,10 +28,20 @@ public class Dough {
     }
 
     private void setBakingTechnique(String bakingTechnique) {
-        if (bakingTechnique == null || bakingTechnique.trim().isEmpty()) {
+        if (bakingTechnique == null || bakingTechnique.trim().isEmpty() || !checkFlourBakingValidity(bakingTechnique)) {
             throw new IllegalArgumentException("Invalid type of dough.");
         }
         this.bakingTechnique = bakingTechnique;
+    }
+
+    private boolean checkFlourBakingValidity(String flourType) {
+        boolean isThere = false;
+        for (DoughModifiers Flour : DoughModifiers.values()) {
+            if (Flour.name().equals(flourType)) {
+                isThere = true;
+            }
+        }
+        return isThere;
     }
 
     public double getWeight() {

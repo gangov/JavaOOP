@@ -38,11 +38,12 @@ public class Person {
 
     public void buyProduct(Product product) {
         if (this.getMoney() >= product.getCost()) {
-            this.products.add(product);
             this.setMoney(this.money - product.getCost());
-            System.out.println(String.format("%s bought %s", this.getName(), product.getName()));
+            this.products.add(product);
         } else if (this.getMoney() < product.getCost()) {
-            System.out.println(String.format("%s can't afford %s", this.getName(), product.getName()));
+            throw new IllegalStateException(String.format("%s can't afford %s",
+                    this.getName(),
+                    product.getName()));
         }
     }
 }
