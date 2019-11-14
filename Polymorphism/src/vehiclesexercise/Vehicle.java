@@ -1,8 +1,10 @@
 package vehiclesexercise;
 
 import java.text.DecimalFormat;
-
+// TODO it is "Cannot fit fuel in tank" should be "Fuel must be a positive number"
 public class Vehicle {
+    private static final DecimalFormat df = new DecimalFormat("#.##");
+
     private double fuelQuantity;
     private double fuelConsumption;
     private double tankCapacity;
@@ -17,14 +19,6 @@ public class Vehicle {
         return tankCapacity;
     }
 
-    protected void setTankCapacity(double tankCapacity) {
-        this.tankCapacity = tankCapacity;
-    }
-
-    public double getFuelQuantity() {
-        return fuelQuantity;
-    }
-
     protected void setFuelQuantity(double fuelQuantity) {
         if (fuelQuantity <= 0) {
             System.out.println("Fuel must be a positive number");
@@ -32,6 +26,19 @@ public class Vehicle {
             this.fuelQuantity = fuelQuantity;
         }
     }
+
+    protected void setTankCapacity(double tankCapacity) {
+        if (tankCapacity <= 0) {
+            System.out.println("Fuel must be a positive number");
+        } else {
+            this.tankCapacity = tankCapacity;
+        }
+    }
+
+    public double getFuelQuantity() {
+        return fuelQuantity;
+    }
+
 
     public double getFuelConsumption() {
         return fuelConsumption;
@@ -43,7 +50,6 @@ public class Vehicle {
 
     public void drive(double distance) {
         if (distance * this.getFuelConsumption() <= this.getFuelQuantity()) {
-            DecimalFormat df = new DecimalFormat("0.######");
             this.setFuelQuantity(this.getFuelQuantity() - (distance * this.getFuelConsumption()));
             System.out.println(String.format("%s travelled %s km", this.getClass().getSimpleName(), df.format(distance)));
         } else {
