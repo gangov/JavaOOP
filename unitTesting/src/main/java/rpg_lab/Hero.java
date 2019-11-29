@@ -1,17 +1,23 @@
 package rpg_lab;
 
+import rpg_lab.interfaces.Target;
+import rpg_lab.interfaces.Weapon;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Hero {
 
     private String name;
     private int experience;
-    private Axe weapon;
+    private Weapon weapon;
+    private Iterable<Weapon> inventory;
 
-    public Hero(String name) {
+    public Hero(String name, int experience, Weapon axe) {
         this.name = name;
-        this.experience = 0;
-        this.weapon = new Axe(10, 10);
+        this.experience = experience;
+        this.weapon = axe;
+        this.inventory = new ArrayList<>();
     }
 
     public String getName() {
@@ -22,11 +28,11 @@ public class Hero {
         return this.experience;
     }
 
-    public Axe getWeapon() {
+    public Weapon getWeapon() {
         return this.weapon;
     }
 
-    public void attack(Dummy target) {
+    public void attack(Target target) {
         this.weapon.attack(target);
 
         if (target.isDead()) {

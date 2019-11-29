@@ -1,9 +1,15 @@
 package rpg_lab;
 
-public class Dummy {
+import rpg_lab.interfaces.Target;
+import rpg_lab.interfaces.Weapon;
+
+import java.util.List;
+
+public class Dummy implements Target {
 
     private int health;
     private int experience;
+    private List<Weapon> possibleLoot;
 
     public Dummy(int health, int experience) {
         this.health = health;

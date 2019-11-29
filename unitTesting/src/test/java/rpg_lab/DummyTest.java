@@ -21,10 +21,13 @@ public class DummyTest {
 
     @Test
     public void deadDummyCanGiveExperience() {
-        Hero hero = new Hero("Ivan");
-        Axe axe = new Axe(11, 10);
-        Dummy dummy = new Dummy(10, 10);
-        axe.attack(dummy);
-        Assert.assertEquals(10, hero.getExperience());
+        Dummy dummy = new Dummy(0, 10);
+        Assert.assertEquals(10, dummy.giveExperience());
+    }
+
+    @Test (expected = IllegalStateException.class)
+    public void liveDummyCannotGiveExperience() {
+        Dummy dummy = new Dummy(12, 10);
+        dummy.giveExperience();
     }
 }
