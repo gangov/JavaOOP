@@ -2,29 +2,32 @@ package spaceStation.repositories;
 
 import spaceStation.models.astronauts.Astronaut;
 
-import java.util.Collection;
+import java.util.*;
 
-public class AstronautRepository implements Repository {
-    private Collection<Astronaut> astronauts;
+public class AstronautRepository implements Repository<Astronaut> {
+    private List<Astronaut> astronauts;
 
-
-    @Override
-    public Collection getModels() {
-        return null;
+    public AstronautRepository() {
+        this.astronauts = new ArrayList<>();
     }
 
     @Override
-    public void add(Object model) {
-
+    public Collection<Astronaut> getModels() {
+        return Collections.unmodifiableCollection(this.astronauts);
     }
 
     @Override
-    public boolean remove(Object model) {
-        return false;
+    public void add(Astronaut model) {
+        this.astronauts.add(model);
     }
 
     @Override
-    public Object findByName(String name) {
-        return null;
+    public boolean remove(Astronaut model) {
+        return this.astronauts.remove(model);
+    }
+
+    @Override
+    public Astronaut findByName(String name) {
+        return this.astronauts.stream().filter(e -> e.getName().equals(name)).findFirst().orElse(null);
     }
 }

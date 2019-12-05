@@ -1,9 +1,9 @@
 package spaceStation.models.astronauts;
 
 public class Meteorologist extends BaseAstronaut {
-    private static final int INITIAL_OXYGEN = 90;
+    private static final double INITIAL_OXYGEN = 90;
 
-    protected Meteorologist(String name) {
+    public Meteorologist(String name) {
         super(name, INITIAL_OXYGEN);
     }
 }
