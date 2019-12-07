@@ -2,12 +2,13 @@ package viceCity.models.players;
 
 import viceCity.common.ExceptionMessages;
 import viceCity.models.guns.Gun;
+import viceCity.repositories.interfaces.GunRepository;
 import viceCity.repositories.interfaces.Repository;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class BasePlayer implements Player {
+public abstract class BasePlayer implements Player {
     private String name;
     private int lifePoints;
     private Repository<Gun> gunRepository;
@@ -15,6 +16,7 @@ public class BasePlayer implements Player {
     protected BasePlayer(String name, int lifePoints) {
         this.setName(name);
         this.setLifePoints(lifePoints);
+        this.gunRepository = new GunRepository();
     }
 
     public void setName(String name) {
