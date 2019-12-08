@@ -81,4 +81,9 @@ public class RaceEntryTest {
 
         Assert.assertFalse(alltheRiders.values().equals(raceEntry.getRiders()));
     }
+
+    @Test
+    public void checkForUnmodifiable() {
+        Assert.assertTrue(raceEntry.getRiders().getClass().getSimpleName().equals("UnmodifiableCollection"));
+    }
 }

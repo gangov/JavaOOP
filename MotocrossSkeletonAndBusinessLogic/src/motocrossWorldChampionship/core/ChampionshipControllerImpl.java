@@ -15,6 +15,7 @@ import motocrossWorldChampionship.repositories.interfaces.RiderRepo;
 
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class ChampionshipControllerImpl implements ChampionshipController {
     private static final int MINIMUM_PARTICIPANTS = 3;
@@ -45,10 +46,13 @@ public class ChampionshipControllerImpl implements ChampionshipController {
         switch (type) {
             case "Speed":
                 bike = new SpeedMotorcycle(model, horsePower);
+                break;
             case "Power":
                 bike = new PowerMotorcycle(model, horsePower);
+                break;
             default:
                 bike = null;
+                break;
         }
 
         if (!checkMotorcycleExists(model, this.motorcycleRepo)) {
@@ -112,7 +116,7 @@ public class ChampionshipControllerImpl implements ChampionshipController {
     public String startRace(String raceName) {
         boolean raceHere = checkRaceExists(raceName, this.raceRepo);
         if (!raceHere) {
-            throw new NullPointerException(String.format(ExceptionMessages.RIDER_NOT_FOUND, raceName));
+            throw new NullPointerException(String.format(ExceptionMessages.RACE_NOT_FOUND, raceName));
         }
 
         if (this.raceRepo.getByName(raceName).getRiders().size() < MINIMUM_PARTICIPANTS) {
@@ -122,12 +126,11 @@ public class ChampionshipControllerImpl implements ChampionshipController {
         RaceImpl raceToRemove = this.raceRepo.getAll().stream().filter(race -> race.getName().equals(raceName)).findFirst().orElse(null);
         this.raceRepo.remove(raceToRemove);
 
-        List<RiderImpl> riders = Collections.singletonList((RiderImpl) raceToRemove.getRiders().stream().limit(3).sorted(Comparator.comparingInt(Rider::getNumberOfWins)).collect(Collectors.toList()));
+        List<Rider> sorted = raceToRemove.getRiders().stream().sorted((r1, r2) -> r2.getNumberOfWins() - r1.getNumberOfWins()).collect(Collectors.toList());
 
-        RiderImpl winner = riders.get(0);
-        RiderImpl second = riders.get(0);
-        RiderImpl third = riders.get(0);
-
+        Rider winner = sorted.get(0);
+        Rider second = sorted.get(1);
+        Rider third = sorted.get(2);
 
 
         StringBuilder sb = new StringBuilder();
