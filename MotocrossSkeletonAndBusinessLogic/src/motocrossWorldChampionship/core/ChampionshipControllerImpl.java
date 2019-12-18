@@ -15,7 +15,6 @@ import motocrossWorldChampionship.repositories.interfaces.RiderRepo;
 
 import java.util.*;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class ChampionshipControllerImpl implements ChampionshipController {
     private static final int MINIMUM_PARTICIPANTS = 3;

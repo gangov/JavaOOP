@@ -54,6 +54,6 @@ public abstract class MotorcycleImpl implements Motorcycle {
 
     @Override
     public double calculateRacePoints(int laps) {
-        return (this.cubicCentimeters / this.horsePower) * laps;
+        return this.cubicCentimeters / (this.horsePower * laps);
     }
 }
